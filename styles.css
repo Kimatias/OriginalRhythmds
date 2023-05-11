@@ -1,0 +1,286 @@
+:root{
+    /*Colores*/
+    --dancepink: #e11287;
+    --danceplum: #a38395;
+    --gold:#ae8442;
+    --dblack: #241f24;
+    --almostblack:#3c373c;
+    --ddarkgrey: #5e5f5f;
+    --lightgrey: #a4a6a8;
+    --coldwhite:#f6f5f4;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 200px;
+    text-align: center;
+    padding-top: 55px;
+    background: radial-gradient(circle 400px at bottom, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 100%);
+}
+
+.logo-header {
+    position: absolute;
+    width: 140px;
+    bottom: -73px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--coldwhite);
+    text-shadow: 2px 2px 2px var(--dblack);
+    font-family: 'Alata', sans-serif;
+    letter-spacing: 1px; 
+}
+
+#menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    bottom: 10px;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--coldwhite);
+}
+
+#quote{
+    position: relative;
+    width:100%;
+    height: auto;
+    margin: 90px 0 4px 0;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: var(--dblack);
+    background-color: var(--coldwhite);
+    box-shadow: 0px 10px 2.5em 2.5em var(--coldwhite); /*Con esta propiedad coloque el shadow debajo de p*/
+}
+
+figure{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    align-items: center;
+}
+
+#foto-grupal {
+    width: 100%; 
+    height: auto;
+    box-shadow: 0 0 1.8em var(--dblack);
+}
+
+.presentacion-tarjetas--container{
+    margin-bottom: 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+
+.presentacion-detalle--card {
+    width: 90%;
+    min-width: 288px;   /*0.9*320px*/
+    max-width: 380px;
+    min-height: 200px;
+    margin: 16px 16px 0px 16px;
+    padding: 20px;
+    background-color: var(--coldwhite);
+    border-radius: 4px;
+    box-shadow:  0 0px 6px var(--danceplum);
+}
+
+.presentacion-detalle--card h2{
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    margin-left: -20px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+    text-align:left;
+    color: var(--coldwhite);
+    text-shadow: 1px 1px 1px var(--dancepink);
+    letter-spacing: 2px; 
+    background: linear-gradient(90deg, var(--almostblack) 20%, var(--dancepink), var(--coldwhite) 80%);
+}
+
+.presentacion-detalle--card p {
+    font-size: 1.7rem;
+    font-weight:400;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    color: var(--dblack);
+}
+
+.presentacion-detalle--card li {
+    font-size: 1.7rem;
+    font-weight:400;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    list-style: inside;
+    list-style-type: "✔️ ";
+    color: var(--dblack);
+}
+
+.galeria{
+    min-width: 320px;
+    width: 100%;  /*Ojo con este pude lograr bien el scroll horizontal*/
+
+}
+
+.galeria h2{
+    margin: 20px 10px 0px 10px;
+    padding-bottom: 2px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+    text-align:center;
+    color: var(--coldwhite);
+    text-shadow: 1px 1px 1px var(--danceplum);
+    letter-spacing: 2px; 
+    background: linear-gradient(90deg, var(--coldwhite), var(--dancepink), var(--almostblack) 40%, var(--almostblack) 60%, var(--dancepink), var(--coldwhite));
+}
+
+.galeria-container--slider {
+    display:flex;
+    align-content: center;
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 5px 10px 5px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    background-color: var(--coldwhite);
+}
+
+.galeria-container--slider::-webkit-scrollbar {
+    background-color: var(--lightgrey);
+    height: 3px;
+}
+
+.galeria-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--almostblack);
+    height: 3px;
+}
+
+.galeria-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 80%;
+    min-width: 224px;
+    max-width: 350px;
+    height: auto;
+    margin: 0px 5px 0px 5px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow:  6px 6px 6px var(--danceplum);
+}
+
+.galeria-container--card img {
+    margin-left: 6.25%;
+    width: 87.5%;
+}
+
+.galeria-container--card video {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.logo-footer {
+    position: absolute;
+    width: 140px;
+    bottom: 225px;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 300px;
+    text-align: center;
+    margin-top: 90px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background: radial-gradient(circle 400px at top, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 100%);
+}
+
+.redes li {
+    font-size: 1.6rem;
+    font-weight:300;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    list-style-type: none;
+}
+
+span {
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+#logo-instagram {
+    background-image: url(./assets/img/instagram.png);
+    background-size:cover;
+    vertical-align: text-bottom;
+}
+
+#logo-facebook {
+    background-image: url(./assets/img/facebook.png);
+    background-size:cover;
+    vertical-align: text-bottom;
+}
+
+#logo-mail {
+    background-image: url(./assets/img/email.png);
+    background-size:cover;
+    vertical-align: text-bottom;
+}
+.redes a{
+    
+    text-decoration: none;
+    color: var(--coldwhite);
+}
+
+.pie-pag {
+    margin-top: 25px;
+}
+
+footer p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: var(--coldwhite);
+    letter-spacing: 1px; 
+}
+
