@@ -262,8 +262,9 @@ span {
 
 #logo-mail {
     background-image: url(./assets/img/email.png);
-    background-size:cover;
-    vertical-align: text-bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    vertical-align: -5px;
 }
 .redes a{
     
