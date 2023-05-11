@@ -96,9 +96,9 @@ figure{
 .presentacion-tarjetas--container{
     margin-bottom: 16px;
     display:flex;
-    flex-direction: column;
     align-items: center;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    width:380px;
 }
 
 .presentacion-detalle--card {
