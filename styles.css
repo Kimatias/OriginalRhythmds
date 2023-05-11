@@ -31,7 +31,7 @@ header {
     height: 200px;
     text-align: center;
     padding-top: 55px;
-    background: radial-gradient(circle 400px at bottom, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 100%);
+    background: radial-gradient(circle 400px at bottom, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 90%);
 }
 
 .logo-header {
@@ -98,7 +98,8 @@ figure{
     display:flex;
     align-content: center;
     flex-wrap: wrap;
-    width:380px;  /*al colocar un widh determinado los elementos se centran*/
+    max-width:380px;  /*al colocar un widh determinado los elementos se centran*/
+    min-width: 320px;
 }
 
 .presentacion-detalle--card {
@@ -216,7 +217,7 @@ figure{
 .logo-footer {
     position: absolute;
     width: 140px;
-    bottom: 225px;
+    bottom: 150px;
 }
 
 footer{
@@ -226,15 +227,17 @@ footer{
     align-items: center;
     width: 100%;
     min-width: 320px;
-    height: 300px;
+    height: 230px;
     text-align: center;
     margin-top: 90px;
     padding-top: 90px;
     padding-bottom: 50px;
-    background: radial-gradient(circle 400px at top, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 100%);
+    background: radial-gradient(circle 400px at top, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 90%);
 }
 
 .redes li {
+    display:inline-block;
+    margin-inline: 10px;
     font-size: 1.6rem;
     font-weight:300;
     font-family: 'Dosis', sans-serif;
@@ -251,13 +254,13 @@ span {
 #logo-instagram {
     background-image: url(./assets/img/instagram.png);
     background-size:cover;
-    vertical-align: text-bottom;
+    vertical-align: -2px;
 }
 
 #logo-facebook {
     background-image: url(./assets/img/facebook.png);
     background-size:cover;
-    vertical-align: text-bottom;
+    vertical-align: -2px;
 }
 
 #logo-mail {
@@ -267,9 +270,12 @@ span {
     vertical-align: -5px;
 }
 .redes a{
-    
     text-decoration: none;
     color: var(--coldwhite);
+}
+
+.redes a:hover{
+    color: var(--dblack);
 }
 
 .pie-pag {
