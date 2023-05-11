@@ -95,17 +95,15 @@ figure{
 
 .presentacion-tarjetas--container{
     margin-bottom: 16px;
-    display:flex;
+    display:block;
     align-content: center;
-    flex-wrap: wrap;
-    max-width:380px;  /*al colocar un widh determinado los elementos se centran*/
-    min-width: 320px;
+    min-width: 320px; /*al colocar un widh determinado los elementos se centran*/
 }
 
 .presentacion-detalle--card {
     width: 90%;
     min-width: 288px;   /*0.9*320px*/
-    max-width: 380px;
+    max-width: 320px;
     min-height: 200px;
     margin: 16px 16px 0px 16px;
     padding: 20px;
