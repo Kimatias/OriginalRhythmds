@@ -96,9 +96,9 @@ figure{
 .presentacion-tarjetas--container{
     margin-bottom: 16px;
     display:flex;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
-    width:380px;
+    width:380px;  /*al colocar un widh determinado los elementos se centran*/
 }
 
 .presentacion-detalle--card {
@@ -263,7 +263,7 @@ span {
 #logo-mail {
     background-image: url(./assets/img/email.png);
     background-size:contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
     vertical-align: -5px;
 }
 .redes a{
