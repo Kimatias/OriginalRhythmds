@@ -1,6 +1,6 @@
 .presentacion-tarjetas--container{
     display:flex;
-    width: 824px;
-    align-items: center;
     flex-wrap: wrap;
+    width: 704px;
 }
+
