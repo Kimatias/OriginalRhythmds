@@ -160,7 +160,7 @@ figure{
     font-family: 'Alata', sans-serif;
     text-align:center;
     color: var(--coldwhite);
-    text-shadow: 1px 1px 1px var(--danceplum);
+    text-shadow: 1px 1px 1px var(--dancepink);
     letter-spacing: 2px; 
     background: linear-gradient(90deg, var(--coldwhite), var(--dancepink), var(--almostblack) 40%, var(--almostblack) 60%, var(--dancepink), var(--coldwhite));
 }
