@@ -1,0 +1,9 @@
+.presentacion-tarjetas--container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 1408px;  /* 320x4 + 32*4   contenido + margin*/
+}
+
+.galeria-container--slider{
+    overflow-x: hidden;
+}
