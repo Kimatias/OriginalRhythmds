@@ -41,6 +41,8 @@ header {
 }
 
 h1 {
+    display: inline-block;
+    width: 250px;
     font-size: 2.5rem;
     color: var(--coldwhite);
     text-shadow: 2px 2px 2px var(--dblack);
@@ -152,7 +154,7 @@ figure{
 }
 
 .galeria h2{
-    margin: 20px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
     padding-bottom: 2px;
     font-size: 2.0rem;
     font-weight: bold;
@@ -192,7 +194,7 @@ figure{
     position: relative;
     scroll-snap-align: center;
     width: 80%;
-    min-width: 224px;
+    min-width: 198px;  /*224 antes*/
     max-width: 350px;
     height: auto;
     margin: 0px 5px 0px 5px;
@@ -203,13 +205,11 @@ figure{
 }
 
 .galeria-container--card img {
-    margin-left: 6.25%;
-    width: 87.5%;
+    width: 100%;
 }
 
 .galeria-container--card video {
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
 }
 
 .logo-footer {
