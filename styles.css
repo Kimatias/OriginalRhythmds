@@ -96,7 +96,7 @@ figure{
 }
 
 .presentacion-tarjetas--container{
-    margin-bottom: 16px;
+    margin: 16px 0 16px 0;
     display:block;
     align-content: center;
     min-width: 320px; /*al colocar un widh determinado los elementos se centran*/
@@ -150,6 +150,7 @@ figure{
 .galeria{
     min-width: 320px;
     width: 100%;  /*Ojo con este pude lograr bien el scroll horizontal*/
+    margin-bottom: 90px;
 
 }
 
@@ -227,7 +228,6 @@ footer{
     min-width: 320px;
     height: 230px;
     text-align: center;
-    margin-top: 90px;
     padding-top: 90px;
     padding-bottom: 50px;
     background: radial-gradient(circle 400px at top, var(--coldwhite) 12%,var(--dancepink) 15%, var(--dancepink) 2%, var(--almostblack) 90%);

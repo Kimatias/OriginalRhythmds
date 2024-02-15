@@ -1,9 +1,34 @@
-.presentacion-tarjetas--container{
-    display:flex;
-    flex-wrap: wrap;
-    width: 704px;  /* 320x2 + 32*2   contenido + margin*/
+main{
+    width: 100%;
 }
 
 h1 {
     width: 380px;
 }
+
+#quote{
+    font-size: 1.7rem;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+#foto-grupal {
+    width: 674px;
+    height: auto;
+}
+
+.presentacion-tarjetas--container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 700px;  /* 320x2 + 32*2   contenido + margin*/
+}
+
+.presentacion-detalle--card {
+    margin: 16px 15px 16px 15px;
+}
+
+
+
